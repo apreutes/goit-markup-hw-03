@@ -24,7 +24,7 @@ body {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid red;
+    /* border: 1px solid tomato; */
 }
 
 .section {
@@ -35,6 +35,8 @@ body {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 p, h1, h2, h3 {
@@ -147,19 +149,20 @@ line-height: 1.19;
 
 /* Hero */
 .hero {
-    text-align: center;
     background-color: var(--back-color); 
+    text-align: center;
 }
 
 .hero-title {
     margin-bottom: 30px;
-
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
 
     color: var(--primary-white-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
@@ -178,8 +181,6 @@ line-height: 1.19;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
 }
@@ -190,6 +191,31 @@ line-height: 1.19;
 }
 
 /* Features */
+
+.features-title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.features-list {
+    display: flex;
+}
+
+.features-item {
+    width: 270px;
+}
+
+.features-item:not(:last-child) {
+    margin-right: 30px;
+}
 
 .features-subtitle {
     margin-bottom: 10px;
@@ -210,10 +236,26 @@ line-height: 1.19;
     padding-top: 0;
 }
 
+.work-list {
+    display: flex;
+}
+
+.work-item:not(:last-child) {
+    margin-right: 30px;
+}
+
 /* Team */
 
 .team {
     background-color: var(--secondary-back-color);
+}
+
+.team-list {
+    display: flex;
+}
+
+.team-item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .team-list img {
@@ -239,6 +281,15 @@ line-height: 1.19;
 /* СТИЛИ ДЛЯ ПОРТФОЛИО*/
 
 /* Filter */
+
+.filter {
+    display: flex;
+    justify-content: center;
+}
+
+.filter-item:not(:last-child) {
+    margin-right: 8px;
+}
 
 .filter-button {
     margin-bottom: 34px;
@@ -270,6 +321,32 @@ line-height: 1.19;
 
 
 /* Projects */
+
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.projects-item {
+    width: 370px;
+    flex-basis: calc((100% - 60px) / 3);
+    border: 1px solid #EEEEEE;
+}
+
+
+.projects-title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 .projects-item img {
     margin-bottom: 20px;
