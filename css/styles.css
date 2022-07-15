@@ -285,6 +285,7 @@ line-height: 1.19;
 .filter {
     display: flex;
     justify-content: center;
+    margin-bottom: 34px;
 }
 
 .filter-item:not(:last-child) {
@@ -292,7 +293,6 @@ line-height: 1.19;
 }
 
 .filter-button {
-    margin-bottom: 34px;
     border-radius: 4px;
     padding: 6px 22px;
     border: 1px solid transparent;
@@ -303,7 +303,6 @@ line-height: 1.19;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    letter-spacing: inherit;
     text-align: center;
     cursor: pointer;
 }
@@ -331,9 +330,14 @@ line-height: 1.19;
 .projects-item {
     width: 370px;
     flex-basis: calc((100% - 60px) / 3);
-    border: 1px solid #EEEEEE;
 }
 
+.progects-item-text-container {
+    border-bottom: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    padding: 20px 24px;
+}
 
 .projects-title {
     position: absolute;
@@ -348,10 +352,6 @@ line-height: 1.19;
     overflow: hidden;
 }
 
-.projects-item img {
-    margin-bottom: 20px;
-}
-
 .progects-subtitle {
     display: inline-block;
     margin-bottom: 4px;
@@ -361,8 +361,6 @@ line-height: 1.19;
     letter-spacing: 0.06em;
 }
 .projects-text {
-    margin-bottom: 20px;
-
     color: var(--text-color);
     font-size: 16px;
     line-height: 1.88;
